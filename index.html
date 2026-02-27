@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titulo Site</title>
+
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+
+    <!-- Link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Link Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/global.css" />
+
+    <!-- Link ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/reveal.js" defer></script>
+    
+  </head>
+<body>
+    <header>
+      <div class="header-top-fixo w-100 py-2">
+          <!--
+            ==================================================================
+                                Barra de Navegações
+            ==================================================================
+            -->
+          <nav class="navbar py-1 navbar-expand-lg navbar-light" id="menuNav">
+            <div class="container d-flex justify-content-between">
+              <a class="navbar-brand m-0" href="index.html">
+                <img src="img/logo-header.svg" alt="logo" class="logo-header-nova" />
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal" href="#">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal" href="#">Convidados</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-normal" href="#">Assista</a>
+                  </li>
+                </ul>
+              </div>
+              <a href="https://wa.me/558182026619?text=Ol%C3%A1!%20Vim%20do%20site%20PodContabilizar.%20Estou%20interessado." target="_blank" class="btn-fazer-contato d-none fs-6 d-lg-inline-block fw-bolder py-2 px-4 rounded-5">
+                Participe
+              </a>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <main>
+      <!-- Sessão Inicial -->
+      <section id="sessao-inicial" class="d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="content-sessao-inicial">
+                <h1 class="fw-light">
+                  CONQUISTE SEU ESPAÇO NO <strong class="fw-bold">MUNDO CONTÁBIL</strong> 
+                </h1>
+                <p class="fw-light mb-4">
+                  O <strong class="fw-bold">PodContabilizar</strong> é o podcast que traz histórias inspiradoras de empreendedores e especialistas do setor contábil. Apresentado por Carlos Santos, compartilhe experiências valiosas, aprenda com os melhores e acelere sua jornada profissional.
+                </p>
+                <div class="content-btn-sessao-inicial d-flex flex-column flex-sm-row">
+                  <div>
+                    <a href="#" class="btn-sessao-inicial-entre-contato px-4 py-2 rounded-5 fw-bold me-3">
+                      Entre em contato
+                    </a>
+                  </div>
+                  <div class="mt-4 mt-lg-0">
+                    <a href="#" class="btn-sessao-inicial-assista-podcast px-4 py-2 rounded-5 fw-bold">
+                      Assista nosso Podcast
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fim Sessão Inicial -->
+
+      <!-- Cultura -->
+      <section id="cultura">
+        <div class="container py-5">
+          <h2 class="text-center fs-1 fw-bolder mb-5">
+            O QUE NOS IMPULSIONA:
+          </h2>
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-lg-6">
+              <div class="contant-cultura text-center text-lg-start d-bloc d-lg-flex justify-content-start align-items-center">
+                <img src="icon/icone1-cultura.png" alt="Icone cultura" class="img-fluid me-0 me-lg-4">
+                <div class="content-txt-cultura">
+                  <h2>MISSÃO</h2>
+                  <p>
+                    Acelerar o crescimento e os aspectos competitivos dos empresários contábeis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contant-cultura text-center text-lg-start d-bloc d-lg-flex justify-content-start align-items-center">
+                <img src="icon/icone2-cultura.png" alt="Icone cultura" class="img-fluid me-4">
+                <div class="content-txt-cultura">
+                  <h2>VISÃO</h2>
+                  <p>
+                    Precisamos estar onde o empreendedorismo acontece e expandir para atingir todas as regiões do Brasil
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contant-cultura text-center text-lg-start d-bloc d-lg-flex justify-content-start align-items-center">
+                <img src="icon/icone3-cultura.png" alt="Icone cultura" class="img-fluid me-4">
+                <div class="content-txt-cultura">
+                  <h2>VALORES</h2>
+                  <p>
+                    Valorizamos quem acredita. A postura de dono é essencial: o que eu faço gera lucro, satisfação do cliente e prosperidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fim Cultura -->
+
+      <!-- Sobre -->
+      <section id="sobre">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-6">
+                <div class="content-sobre">
+                  <h2 class="fw-bold">
+                    HOST | CARLOS SANTOS
+                  </h2>
+                  <p>
+                    <strong>Carlos Santos</strong> é contador e especialista em Marketing Contábil.
+                  </p>
+                  <p>
+                    Formado em Ciências Contábeis e com especialização em Marketing e Vendas, Carlos tem ajudado mais de mil empresários no Brasil desde 2015, através de mentorias personalizadas. Além de ser embaixador da startup Conta Azul e parceiro da Omie.
+                  </p>
+                  <p>
+                    Especialista em SEO para Google, ele atrai centenas de leads diárias para seus negócios, tornando-os escaláveis e exponenciais.
+                  </p>
+                  <p>
+                    Durante a pandemia, lançou o evento "Transformação Digital para o Mercado Contábil", reunindo os maiores nomes do setor.
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fim Sobre -->
+
+      <!-- Negocios -->
+       <section id="negocios">
+        <div class="container py-5">
+          <div class="content-titulo-negocios mb-4 text-center">
+            <h2 class="fw-bold">
+              GRANDE REDE DE NEGÓCIOS!
+            </h2>
+            <p class="fw-light">
+              Além de empresário no setor contábil, Carlos Santos<br> também é sócio em outros negócios:
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mb-4">
+              <div class="content-card-negocios rounded-3 p-4 ">
+                <p class="fs-4 fw-lighter">
+                  Agência de marketing digital com mais de 500 clientes ativos.
+                </p>
+                <a href="https://wa.me/5581982026619?text=Ol%C3%A1!%20Estou%20interessado%20no%20seu%20servi%C3%A7o."  target="_blank" class="btn-card-negocios px-4 py-2 rounded-5 fw-bold">
+                  Saiba Mais
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div class="content-card-negocios rounded-3 p-4 ">
+                <p class="fs-4 fw-lighter">
+                  Empresa de recrutamento e seleção de <br>talentos.
+                </p>
+                <a href="https://wa.me/5581982026619?text=Ol%C3%A1!%20Estou%20interessado%20no%20seu%20servi%C3%A7o."  target="_blank" class="btn-card-negocios px-4 py-2 rounded-5 fw-bold">
+                  Saiba Mais
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div class="content-card-negocios rounded-3 p-4 ">
+                <p class="fs-4 fw-lighter">
+                  Empresa de BPO Financeiro. <br><br>
+                </p>
+                <a href="https://wa.me/5581982026619?text=Ol%C3%A1!%20Estou%20interessado%20no%20seu%20servi%C3%A7o."  target="_blank" class="btn-card-negocios px-4 py-2 rounded-5 fw-bold">
+                  Saiba Mais
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div class="content-card-negocios rounded-3 p-4 ">
+                <p class="fs-4 fw-lighter">
+                  Ramo de Certificação Digital e Agência Regulatória.
+                </p>
+                <a href="https://wa.me/5581982026619?text=Ol%C3%A1!%20Estou%20interessado%20no%20seu%20servi%C3%A7o."  target="_blank" class="btn-card-negocios px-4 py-2 rounded-5 fw-bold">
+                  Saiba Mais
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div class="content-card-negocios rounded-3 p-4 ">
+                <p class="fs-4 fw-lighter">
+                  Empresa de Tecnologia Digital, focada em E-commerce e aplicativos.
+                </p>
+                <a href="https://wa.me/5581982026619?text=Ol%C3%A1!%20Estou%20interessado%20no%20seu%20servi%C3%A7o."  target="_blank" class="btn-card-negocios px-4 py-2 rounded-5 fw-bold">
+                  Saiba Mais
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+              <div class="content-card-negocios rounded-3 p-4 ">
+                <p class="fs-4 fw-lighter">
+                  Franquia Contábil – ANX Expansão Brasil <br><br>
+                </p>
+                <a href="https://wa.me/5581982026619?text=Ol%C3%A1!%20Estou%20interessado%20no%20seu%20servi%C3%A7o."  target="_blank" class="btn-card-negocios px-4 py-2 rounded-5 fw-bold">
+                  Saiba Mais
+                </a>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+       </section>
+      <!-- Fim Negocios -->
+
+      <!-- Convidados -->
+      <section class="py-5" id="convidados">
+        <div class="container">
+            <h2 class="text-center fw-bold section-title mb-5 fs-2">CONVIDADOS QUE PARTICIPARAM</h2>
+            
+            <div class="row g-4 mb-4" id="guests-container">
+            </div>
+            
+            <div class="load-more-wrapper" id="load-more-btn">
+                <hr class="load-more-line">
+                <span class="load-more-text" id="load-more-text">Carregar mais -</span>
+                <hr class="load-more-line">
+            </div>
+        </div>
+      </section>
+      <!-- Fim Convidados -->
+
+      <section class="py-5">
+        <div class="container position-relative">
+            
+            <div class="section-header d-flex d-md-flex align-items-center">
+                <button class="carousel-arrow" id="prev-arrow" aria-label="Anterior">&#10094;</button>
+                
+                <h2 class="section-title fw-bold">NOSSOS ÚLTIMOS EPISÓDIOS</h2>
+                
+                <button class="carousel-arrow" id="next-arrow" aria-label="Próximo">&#10095;</button>
+            </div>
+            
+            <div class="slider-container" id="episodes-slider">
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="bg-dark text-white">
+      <div class="container py-5">
+        <div class="row">
+          <!-- Column 1: logo and description -->
+          <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+            <a href="index.html">
+              <img src="img/logo-header.svg" alt="PodContabilizar logo" class="footer-logo mb-3" />
+            </a>
+            <p class="footer-text">
+              Todos os direitos reservados. É proibida a cópia ou reprodução de todo ou qualquer conteúdo contido neste website sem prévia autorização e citação por link.
+            </p>
+            <p class="fw-bold mt-3">Mídias Sociais</p>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!-- Column 2: navigation links -->
+          <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+            <ul class="list-unstyled">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">Participe</a></li>
+              <li><a href="#" class="footer-link">Sobre</a></li>
+              <li><a href="#" class="footer-link">FAQ</a></li>
+              <li><a href="#" class="footer-link">Convidados</a></li>
+              <li><a href="#" class="footer-link">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: map embed -->
+          <div class="col-lg-4">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.0568925480223!2d-46.5629884849494!3d-23.553892184673418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c243e0e399%3A0x617c0d5775c7d9ce!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Link Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Link JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

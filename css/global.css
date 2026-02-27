@@ -1,0 +1,386 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Fim Fontes */
+
+/* Variaveis */
+:root {
+    --fonte-principal: "Inter", serif;
+    --cor-vermelho: #A80000; 
+    --cor-preto: #000000;
+    --cor-branco: #FFFFFF;
+}
+/* Fim Variaveis */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+}
+
+/* Header */
+.header-top-fixo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+    background-color: var(--cor-vermelho);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.header-top-fixo .nav-link{
+    color: var(--cor-branco);
+    transition: all 0.3s ease;
+}
+.header-top-fixo .nav-link:hover{
+    color: var(--cor-preto);
+}
+.header-top-fixo .btn-fazer-contato{
+    text-decoration: none;
+    background-color: var(--cor-branco);
+    color: var(--cor-vermelho);
+    transition: all 0.3s ease;
+}
+.header-top-fixo .btn-fazer-contato:hover{
+    text-decoration: none;
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+/* Fim Header */
+
+/* Sessão Inicial */
+#sessao-inicial{
+    background-image: url('../img/bg-sessao-inicial.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--cor-branco);
+}
+#sessao-inicial h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.btn-sessao-inicial-entre-contato{
+    text-decoration: none;
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    transition: all 0.3s ease;
+}
+.btn-sessao-inicial-entre-contato:hover{
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+}
+.btn-sessao-inicial-assista-podcast{
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--cor-branco);
+    transition: all 0.3s ease;
+    border: #FFFFFF 1px solid;
+}
+.btn-sessao-inicial-assista-podcast:hover{
+    background-color: var(--cor-branco);
+    color: var(--cor-preto);
+}
+/* Fim Sessão Inicial */
+
+/* Cultura */
+#cultura{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+/* Fim Cultura */
+
+/* Sobre */
+#sobre{
+    background-color: var(--cor-preto);
+    background-image: url('../img/bg-sobre.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--cor-branco);
+}
+#sobre p{
+    font-weight: 200;
+}
+@media (max-width: 900px) {
+    #sobre{
+        background-image: url('../img/bg-sobre-mobile.png');  
+    }
+}
+/* Fim Sobre */
+
+/* Negocios */
+#negocios{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+.content-card-negocios{
+    border: 2px solid var(--cor-vermelho);
+}
+.btn-card-negocios{
+    text-decoration: none;
+    background-color: var(--cor-branco);
+    color: var(--cor-vermelho);
+    transition: all 0.3s ease;
+}
+.btn-card-negocios:hover{
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+}
+/* Fim Negocios */
+
+/* Convidados */
+#convidados{
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+
+.guest-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Footer */
+footer {
+    background-color: var(--cor-preto);
+    color: var(--cor-branco);
+}
+footer a {
+    color: var(--cor-branco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: var(--cor-vermelho);
+}
+.footer-logo {
+    max-width: 200px;
+}
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+.social-icons a {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+footer .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+.map-container iframe {
+    border-radius: 0.5rem;
+}
+@media (max-width: 767px) {
+    .footer-text {
+        font-size: 0.85rem;
+    }
+}
+
+.guest-img {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.guest-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.guest-role {
+    font-size: 1rem;
+    color: #a0a0a0;
+    margin-bottom: 1rem;
+}
+
+.btn-watch {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-branco);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-watch:hover {
+    background-color: var(--cor-vermelho-escuro);
+    color: var(--cor-branco);
+    transform: scale(1.02);
+}
+
+.load-more-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2rem 0;
+    transition: opacity 0.3s;
+}
+
+.load-more-wrapper:hover {
+    opacity: 0.8;
+}
+
+.load-more-line {
+    flex-grow: 1;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #5a0000, transparent); 
+    border: none;
+    margin: 0;
+}
+
+.load-more-text {
+    padding: 0 1rem;
+    font-size: 0.85rem;
+    color: #d3d3d3;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* Fim Convidados */
+
+/* ============================
+           CSS Customizado
+           ============================ */
+        body {
+            background-color: #030303;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden; /* Evita rolagem horizontal na página inteira */
+        }
+
+        /* Cabeçalho da Seção e Setas */
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .carousel-arrow {
+            background: none;
+            border: none;
+            color: #c40000; /* Vermelho das setas */
+            font-size: 2.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0 15px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            user-select: none;
+        }
+
+        .carousel-arrow:hover {
+            transform: scale(1.1);
+        }
+
+        .carousel-arrow:active {
+            transform: scale(0.9);
+        }
+
+        /* Container do Slider (Rolagem Horizontal) */
+        .slider-container {
+            display: flex;
+            gap: 1.5rem; /* Espaçamento entre os cards */
+            overflow-x: auto;
+            scroll-behavior: smooth; /* Animação suave ao clicar na seta */
+            scroll-snap-type: x mandatory; /* Força o alinhamento do card na rolagem */
+            padding-bottom: 1rem;
+            
+            /* Oculta a barra de rolagem padrão para um visual mais limpo */
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE e Edge */
+        }
+
+        .slider-container::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        /* Estilos do Card de Episódio */
+        .episode-card {
+            flex: 0 0 100%; /* Celular: 1 card por tela */
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        /* Responsividade do Slider via CSS Puro */
+        @media (min-width: 768px) {
+            .episode-card {
+                flex: 0 0 calc(50% - 0.75rem); /* Tablet: 2 cards */
+            }
+        }
+
+        @media (min-width: 992px) {
+            .episode-card {
+                flex: 0 0 calc(33.333% - 1rem); /* Desktop: 3 cards */
+            }
+        }
+
+        .episode-img-wrapper {
+            width: 100%;
+            border: 3px solid #c40000; /* Borda vermelha do layout */
+            margin-bottom: 1.2rem;
+            overflow: hidden;
+            border-radius: 4px; /* Leve arredondamento, se desejar remover, mude para 0 */
+        }
+
+        .episode-img {
+            width: 100%;
+            aspect-ratio: 16 / 9; /* Proporção de vídeo do YouTube */
+            object-fit: cover;
+            display: block;
+        }
+
+        .episode-title {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .episode-desc {
+            font-size: 0.85rem;
+            color: #a0a0a0;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+            flex-grow: 1; /* Empurra o botão para baixo se as descrições tiverem tamanhos diferentes */
+        }
+
+        /* Botão */
+        .btn-watch {
+            background-color: #c40000;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            display: inline-block;
+        }
+
+        .btn-watch:hover {
+            background-color: #e60000;
+            color: #ffffff;
+            transform: scale(1.02);
+        }
