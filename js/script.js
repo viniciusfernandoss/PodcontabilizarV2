@@ -128,7 +128,7 @@
                     <h3 class="episode-title">${episode.title}</h3>
                     <p class="episode-desc">${episode.desc}</p>
                     <div>
-                        <a href="#" class="btn-watch">Assista agora</a>
+                        <a href="https://www.youtube.com/@CarlosSantosContador" class="btn-watch">Assista agora</a>
                     </div>
                 `;
                 slider.appendChild(cardWrapper);
