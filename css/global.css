@@ -161,7 +161,7 @@
 
 /* Footer */
 footer {
-    background-color: var(--cor-preto);
+    background-color: #060606;
     color: var(--cor-branco);
 }
 footer a {
