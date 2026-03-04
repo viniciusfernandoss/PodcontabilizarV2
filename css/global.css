@@ -60,6 +60,20 @@
     font-size: 3.5rem;
     font-weight: 700;
 }
+.txt-sessao-inicial{
+    font-size: 1rem;
+}
+@media (min-width: 1600px) {
+    .txt-sessao-inicial { 
+        font-size: 1.7rem; 
+    }
+    #sessao-inicial h1{
+        font-size: 4.5rem;
+    }
+    .content-btn-sessao-inicial a{
+        font-size: 1.5rem;
+    }
+}
 .btn-sessao-inicial-entre-contato{
     text-decoration: none;
     background-color: var(--cor-vermelho);
