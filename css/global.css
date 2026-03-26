@@ -161,10 +161,7 @@
 
 /* Footer */
 footer {
-    background-color: var(--cor-preto);
-    background-image: url('../img/bg-footer.png');
-    background-size: cover;
-    background-position: center;
+    background-color: #101010;
     color: var(--cor-branco);
 }
 footer .bi{
